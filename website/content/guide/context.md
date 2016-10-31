@@ -12,8 +12,8 @@ description = "Context in Echo"
 
 `echo.Context` represents the context of the current HTTP request. It holds request and
 response reference, path, path parameters, data, registered handler and APIs to read
-request and write response. Context is 100% compatible with standard `context.Context`.
-As Context is an interface, it is easy to extend it with custom APIs.
+request and write response. An underlying `context.Context` can be accessed via the
+`StdContext()` method. As Context is an interface, it is easy to extend it with custom APIs.
 
 #### Extending Context
 
